@@ -1,0 +1,13 @@
+:root {
+  /* slate-900 */
+  --ui-primary: 15 23 42;
+  --ui-secondary: 147 51 234; /* purple-600 */
+  --ui-accent: 245 158 11;    /* amber-500 */
+}
+
+.dark {
+  /* slate-400 */
+  --ui-primary: 148 163 184;
+  --ui-secondary: 196 181 253; /* purple-300 */
+  --ui-accent: 252 211 77;     /* amber-300 */
+}
