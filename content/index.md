@@ -6,7 +6,7 @@ seo:
 
 ::u-page-hero
 #title
-Ship modern web apps — fast.
+Ship modern nodejs apps — fast.
 
 #description
 Charcole is a powerful CLI that helps you scaffold, configure, and ship production-ready projects in minutes.
