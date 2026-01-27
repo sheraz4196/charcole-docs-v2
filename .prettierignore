@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# (Optional) Re-enable formatting only for config/code if you want later
+!*.js
+!*.ts
+!*.json
+!*.yml
+!*.yaml
+!*.vue
