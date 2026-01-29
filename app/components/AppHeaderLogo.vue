@@ -8,13 +8,13 @@ const isHovering = ref(false)
 const isTouchDevice = ref(false)
 let cleanup: (() => void) | undefined
 
-const color = computed(() => props.white ? 'text-white' : 'text-black dark:text-white')
+const theme = ref<'light' | 'dark'>('light')
+
+console.log('AppHeaderLogo mounted, theme:', theme.value)
 
 const logoElement = ref<HTMLImageElement>()
 const toast = useToast()
 
-// Track the current theme
-const theme = ref<'light' | 'dark'>('light')
 
 // Watch for theme changes on the html element
 onMounted(() => {
