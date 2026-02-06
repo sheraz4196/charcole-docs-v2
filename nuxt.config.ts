@@ -7,7 +7,23 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/main.css"],
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxtjs/sitemap", "@nuxtjs/robots"],
+
+  sitemap: {
+    sources: ["/api/__sitemap__/urls"],
+    xsl: false,
+    defaults: {
+      changefreq: "weekly",
+      priority: 0.8,
+      lastmod: new Date().toISOString(),
+    },
+  },
+
+  robots: {
+    disallow: [],
+    allow: "/",
+    sitemap: "https://charcole.site/sitemap.xml",
+  },
 
   app: {
     head: {
