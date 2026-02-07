@@ -14,7 +14,7 @@ Learn what repositories mean in Charcole and why they are one of the most powerf
 
 #### [Swagger Overview](./swagger.md)
 
-Main guide explaining what @charcolesswagger is, why it exists, and how it eliminates schema duplication. Covers the fundamental problem and the solution.
+Main guide explaining what @charcoles/swagger is, why it exists, and how it eliminates schema duplication. Covers the fundamental problem and the solution.
 
 #### [Swagger Examples](./swagger-examples.md)
 
@@ -29,7 +29,7 @@ Practical, copy-paste examples for common API patterns:
 
 #### [Swagger for Non-Charcole Projects](./swagger-for-non-charcole.md)
 
-How to use @charcolesswagger in any Express.js project, even if you didn't use create-charcole. Covers installation, basic setup, and integration with existing projects.
+How to use @charcoles/swagger in any Express.js project, even if you didn't use create-charcole. Covers installation, basic setup, and integration with existing projects.
 
 #### [Adding Swagger to Existing Charcole Projects](./swagger-migration.md)
 
@@ -60,7 +60,7 @@ The documentation is designed to be read in any order based on your needs:
 2. Follow swagger-migration.md to add Swagger to your project
 3. Reference swagger-examples.md as needed
 
-**Want to use @charcolesswagger standalone?**
+**Want to use @charcoles/swagger standalone?**
 
 1. Read swagger.md for context
 2. Follow swagger-for-non-charcole.md for setup
@@ -78,7 +78,7 @@ When adding new documentation:
 
 ## External Documentation
 
-- **Package README:** `packages/swagger/README.md` - API reference for @charcolesswagger
+- **Package README:** `packages/swagger/README.md` - API reference for @charcoles/swagger
 - **Swagger Guide (in templates):** `template/ts/src/lib/swagger/SWAGGER_GUIDE.md` - Quick reference for projects created with Charcole
 - **Changelog:** `CHANGELOG.md` - Version history and release notes
 - **Backward Compatibility:** `packages/swagger/BACKWARD_COMPATIBILITY.md` - Migration and compatibility information
