@@ -1,72 +1,84 @@
-# Docus Default Starter
+# Charcole Documentation
 
-> A beautiful, minimal starter for creating documentation with Docus
+This directory contains comprehensive documentation for Charcole features and packages.
 
-This is the default Docus starter template that provides everything you need to build beautiful documentation sites with Markdown and Vue components.
+## Documentation Files
 
-> [!TIP]
-> If you're looking for i18n support, check out the [i18n starter](https://github.com/nuxt-themes/docus/tree/main/.starters/i18n).
+### Core Concepts
 
-## ✨ Features
+#### [Repositories](./repositories.md)
 
-- 🎨 **Beautiful Design** - Clean, modern documentation theme
-- 📱 **Responsive** - Mobile-first responsive design  
-- 🌙 **Dark Mode** - Built-in dark/light mode support
-- 🔍 **Search** - Full-text search functionality
-- 📝 **Markdown Enhanced** - Extended markdown with custom components
-- 🎨 **Customizable** - Easy theming and brand customization
-- ⚡ **Fast** - Optimized for performance with Nuxt 4
-- 🔧 **TypeScript** - Full TypeScript support
+Learn what repositories mean in Charcole and why they are one of the most powerful parts of the architecture. Covers database abstraction, development without databases, and long-term flexibility.
 
-## 🚀 Quick Start
+### Swagger Documentation
 
-```bash
-# Install dependencies
-npm install
+#### [Swagger Overview](./swagger.md)
 
-# Start development server
-npm run dev
-```
+Main guide explaining what @charcolesswagger is, why it exists, and how it eliminates schema duplication. Covers the fundamental problem and the solution.
 
-Your documentation site will be running at `http://localhost:3000`
+#### [Swagger Examples](./swagger-examples.md)
 
-## 📁 Project Structure
+Practical, copy-paste examples for common API patterns:
 
-```
-my-docs/
-├── content/              # Your markdown content
-│   ├── index.md         # Homepage
-│   ├── 1.getting-started/  # Getting started section
-│   └── 2.essentials/    # Essential documentation
-├── public/              # Static assets
-└── package.json         # Dependencies and scripts
-```
+- GET endpoints
+- POST with validation
+- Protected endpoints with authentication
+- CRUD operations
+- Custom response schemas
+- Query parameters
 
-## ⚡ Built with
+#### [Swagger for Non-Charcole Projects](./swagger-for-non-charcole.md)
 
-This starter comes pre-configured with:
+How to use @charcolesswagger in any Express.js project, even if you didn't use create-charcole. Covers installation, basic setup, and integration with existing projects.
 
-- [Nuxt 4](https://nuxt.com) - The web framework
-- [Nuxt Content](https://content.nuxt.com/) - File-based CMS
-- [Nuxt UI](https://ui.nuxt.com) - UI components
-- [Nuxt Image](https://image.nuxt.com/) - Optimized images
-- [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS
-- [Docus Layer](https://www.npmjs.com/package/docus) - Documentation theme
+#### [Adding Swagger to Existing Charcole Projects](./swagger-migration.md)
 
-## 📖 Documentation
+Step-by-step migration guide for projects created with Charcole v2.1 or earlier. Shows how to retrofit auto-generated Swagger documentation into existing codebases.
 
-For detailed documentation on customizing your Docus project, visit the [Docus Documentation](https://docus.dev)
+## Documentation Format
 
-## 🚀 Deployment
+All documentation follows a consistent format:
 
-Build for production:
+- **YAML frontmatter:** Title, description, navigation icon, SEO metadata
+- **Narrative style:** Clear explanations without unnecessary jargon
+- **Practical focus:** Real-world examples and use cases
+- **Problem-solution structure:** Explains why features exist, not just how to use them
 
-```bash
-npm run build
-```
+## Navigation
 
-The built files will be in the `.output` directory, ready for deployment to any hosting provider that supports Node.js.
+The documentation is designed to be read in any order based on your needs:
 
-## 📄 License
+**New to Charcole?**
 
-[MIT License](https://opensource.org/licenses/MIT) 
+1. Read repositories.md to understand core architecture
+2. Read swagger.md to understand auto-generated docs
+3. Try swagger-examples.md for hands-on examples
+
+**Existing Charcole user (v2.1)?**
+
+1. Read swagger.md for overview
+2. Follow swagger-migration.md to add Swagger to your project
+3. Reference swagger-examples.md as needed
+
+**Want to use @charcolesswagger standalone?**
+
+1. Read swagger.md for context
+2. Follow swagger-for-non-charcole.md for setup
+3. Reference swagger-examples.md for patterns
+
+## Contributing to Documentation
+
+When adding new documentation:
+
+1. Follow the existing YAML frontmatter format
+2. Use narrative style - explain why, not just how
+3. Include practical examples
+4. Keep it focused and concise
+5. Update this README with links to new docs
+
+## External Documentation
+
+- **Package README:** `packages/swagger/README.md` - API reference for @charcolesswagger
+- **Swagger Guide (in templates):** `template/ts/src/lib/swagger/SWAGGER_GUIDE.md` - Quick reference for projects created with Charcole
+- **Changelog:** `CHANGELOG.md` - Version history and release notes
+- **Backward Compatibility:** `packages/swagger/BACKWARD_COMPATIBILITY.md` - Migration and compatibility information
