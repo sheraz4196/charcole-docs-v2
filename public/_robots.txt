@@ -1,5 +1,0 @@
-# robots.txt for https://charcole.site
-User-agent: *
-Allow: /
-
-Sitemap: https://charcole.site/sitemap.xml
