@@ -10,19 +10,68 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxtjs/sitemap", "@nuxtjs/robots"],
 
   sitemap: {
-    sources: ["/api/__sitemap__/urls"],
     xsl: false,
     defaults: {
       changefreq: "weekly",
       priority: 0.8,
       lastmod: new Date().toISOString(),
     },
+    urls: [
+      { loc: "/", priority: 1.0, changefreq: "weekly" },
+      {
+        loc: "/getting-started/introduction",
+        priority: 0.9,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/getting-started/installation",
+        priority: 0.9,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/getting-started/project-structure",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      { loc: "/guides/respositories", priority: 0.8, changefreq: "monthly" },
+      {
+        loc: "/guides/authentication/setup",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/authentication/jwt-configuration",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/swagger/introduction",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/swagger/swagger-migration",
+        priority: 0.7,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/swagger/non-charcole-users",
+        priority: 0.7,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/swagger/swagger-examples",
+        priority: 0.7,
+        changefreq: "monthly",
+      },
+    ],
   },
 
   robots: {
     disallow: [],
     allow: "/",
     sitemap: "https://charcole.site/sitemap.xml",
+    blockNonSeoBots: true,
   },
 
   app: {
@@ -57,7 +106,14 @@ export default defineNuxtConfig({
           content:
             "Production-ready Node.js backend with JS & TS support, clean structure, and optional authentication modules.",
         },
-        { property: "og:image", content: "/og.png" },
+        { property: "og:image", content: "https://charcole.site/og.png" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        {
+          property: "og:image:alt",
+          content: "Charcole — Modern Node.js Backend Starter",
+        },
+        { property: "og:locale", content: "en_US" },
 
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: "Charcole" },
@@ -66,12 +122,13 @@ export default defineNuxtConfig({
           content:
             "Build modern Node.js backends faster with Charcole. JS + TS templates and optional auth modules.",
         },
-        { name: "twitter:image", content: "/og.png" },
+        { name: "twitter:image", content: "https://charcole.site/og.png" },
+        {
+          name: "twitter:image:alt",
+          content: "Charcole — Modern Node.js Backend Starter",
+        },
       ],
-      link: [
-        { rel: "canonical", href: "https://charcole.site" },
-        { rel: "icon", type: "image/svg+xml", href: "/logo.svg" },
-      ],
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/logo.svg" }],
     },
   },
 

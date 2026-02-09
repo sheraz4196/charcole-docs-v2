@@ -2,6 +2,13 @@
 seo:
   title: Charcole — Ship modern web apps faster
   description: Charcole is a modern CLI to scaffold, configure, and ship production-ready web projects with best practices built in.
+  keywords:
+    - charcole
+    - nodejs backend starter
+    - express project scaffolding
+    - create nodejs project
+    - backend CLI tool
+    - typescript backend
 ---
 
 ::u-page-hero
