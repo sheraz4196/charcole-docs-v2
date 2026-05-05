@@ -64,6 +64,46 @@ export default defineNuxtConfig({
         priority: 0.7,
         changefreq: "monthly",
       },
+      {
+        loc: "/guides/payments",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/payments/setup",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/payments/providers",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/payments/endpoints",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/payments/webhooks",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/payments/environment-variables",
+        priority: 0.8,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/payments/non-charcole-users",
+        priority: 0.7,
+        changefreq: "monthly",
+      },
+      {
+        loc: "/guides/payments/payments-examples",
+        priority: 0.7,
+        changefreq: "monthly",
+      },
     ],
   },
 
