@@ -1,4 +1,4 @@
-# Charcole Documentation
+# Charcole Documentation!
 
 This directory contains comprehensive documentation for Charcole features and packages.
 
