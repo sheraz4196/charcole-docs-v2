@@ -1,6 +1,6 @@
 # Project Context
 
-## What this project is
+## What this project is:
 
 - This repository is the **documentation website for [Charcole](https://www.charcole.site/)**, a Node.js backend starter / scaffolding CLI.
 - It is built with **Nuxt 4** and **Docus** to serve static documentation pages and a marketing-style landing experience.
